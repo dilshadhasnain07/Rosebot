@@ -1,4 +1,4 @@
-# Rosebot
+# Rosebot❤
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+kochubot's+Repo!;A+simple+Group+modular+bot!;and+all+futures!)
 </p>
 <center><img src="https://telegra.ph/file/ac054fe88d656291f02e7.jpg"></center>
@@ -17,10 +17,10 @@ Kochu and I are moderating a [support group](https://t.me/Keralabots), where you
 bot, discover/request new features, report bugs, and stay in the loop whenever a new update is available. Of course
 I'll also help when a database schema changes, and some table column needs to be modified/added. Note to maintainers that all schema changes will be found in the commit messages, and its their responsibility to read any new commits.
 
-Join the [news channel](https://t.me/KochuUpdates) if you just want to stay in the loop about new features or
+Join the [news channel](https://t.me/ANIME_NETWORK07) if you just want to stay in the loop about new features or
 announcements.
 
-Alternatively, [find me on telegram](https://t.me/jithumon)! (Keep all support questions in the support chat, where more people can help you.)
+Alternatively, [find me on telegram](https://t.me/hasnainkk)! (Keep all support questions in the support chat, where more people can help you.)
 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dilshadhasnain07/Rosebot)<br>
@@ -39,7 +39,10 @@ Once you've setup your database and your configuration (see below) is complete, 
 
 ## Setting up the bot (Read this before trying to use!):
 Please make sure to use python3.6, as I cannot guarantee everything will work as expected on older python versions!
-This is because markdown parsing is done by iterating through a dict, which are ordered by default in 3.6
+This is because markdown parsing is done by iterating through a dict, which are ordered by default in 3.6.
+
+### Configuration
+
 There are two possible ways of configuring your bot: a config.py file, or ENV variables.
 
 The prefered version is to use a `config.py` file, as it makes it easier to see all your settings grouped together.
@@ -62,7 +65,7 @@ class Development(Config):
     SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
     MESSAGE_DUMP = '-1002074034670' # some group chat that your bot is a member of
     USE_MESSAGE_DUMP = True
-    SUDO_USERS = [6346273488]  # List of id's for users which have sudo access to the bot.
+    SUDO_USERS = [18673980, 83489514]  # List of id's for users which have sudo access to the bot.
     LOAD = []
     NO_LOAD = ['translation']
 ```
@@ -97,8 +100,7 @@ The following env variables are supported:
  __Note__ that going crazy with more threads wont necessarily speed up your bot, given the large amount of sql data 
  accesses, and the way python asynchronous calls work.
  - `BAN_STICKER`: Which sticker to use when banning people.
- - 
- - 'ALLOW_EXCL`: Whether to allow using exclamation marks ! for commands as well as /.
+ - `ALLOW_EXCL`: Whether to allow using exclamation marks ! for commands as well as /.
 
 ### Python dependencies
 
