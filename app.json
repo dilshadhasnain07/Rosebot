@@ -92,13 +92,15 @@
     }
   ],
   "stack": "heroku-22",
-    "buildpacks": [
+      "buildpacks": [
       {
-        "url":"https://github.com/dilshadhasnain07/heroku-buildpack-ffmpeg-latest"
+        "url":"https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
       },
       {
         "url": "heroku/python"
       }
+    ]
+  
     ]
   
   "formation": {
