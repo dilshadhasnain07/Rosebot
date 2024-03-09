@@ -1,4 +1,45 @@
+# Rosebot
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+kochubot's+Repo!;A+simple+Group+modular+bot!;and+all+futures!)
+</p>
+<center><img src="https://telegra.ph/file/ac054fe88d656291f02e7.jpg"></center>
+<br>
+<center><a href="https://www.python.org">
+    <img src="http://ForTheBadge.com/images/badges/made-with-python.svg">
+  </a></center><br>
+<br>
 
+Originally a simple group management bot with multiple admin features, it has evolved, becoming extremely modular and 
+simple to use.
+
+Can be found on telegram as [കൊച്ചുമുതലാളി](https://t.me/kochubot).
+
+Kochu and I are moderating a [support group](https://t.me/Keralabots), where you can ask for help setting up your
+bot, discover/request new features, report bugs, and stay in the loop whenever a new update is available. Of course
+I'll also help when a database schema changes, and some table column needs to be modified/added. Note to maintainers that all schema changes will be found in the commit messages, and its their responsibility to read any new commits.
+
+Join the [news channel](https://t.me/KochuUpdates) if you just want to stay in the loop about new features or
+announcements.
+
+Alternatively, [find me on telegram](https://t.me/jithumon)! (Keep all support questions in the support chat, where more people can help you.)
+
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jithumon/tgbot)<br>
+There is also a [tutorial video](https://youtu.be/W6CLKrehy6w) if you want any help on creating heroku clone.
+[![telegram badge](https://img.shields.io/badge/Support-Group-30302f?style=flat&logo=telegram)](https://telegram.dog/keralabots)
+[![telegram badge](https://img.shields.io/badge/Update-Channel-30302f?style=flat&logo=telegram)](https://telegram.dog/kochuUpdates)
+
+
+
+## Starting the bot.
+
+Once you've setup your database and your configuration (see below) is complete, simply run:
+
+`python3 -m tg_bot`
+
+
+## Setting up the bot (Read this before trying to use!):
+Please make sure to use python3.6, as I cannot guarantee everything will work as expected on older python versions!
+This is because markdown parsing is done by iterating through a dict, which are ordered by default in 3.6
 There are two possible ways of configuring your bot: a config.py file, or ENV variables.
 
 The prefered version is to use a `config.py` file, as it makes it easier to see all your settings grouped together.
