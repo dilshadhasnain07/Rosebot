@@ -92,7 +92,7 @@
     }
   ],
   "stack": "heroku-22",
-  "buildpacks": [],
+
   "formation": {
     "web": {
       "quantity": 1,
