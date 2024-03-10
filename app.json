@@ -91,9 +91,12 @@
       }
     }
   ],
-  "plan": "heroku-postgresql",
-         "options": {
-            "version": "12"
+"stack": "heroku-22",
+  "buildpacks": [https://git.heroku.com/yaemiko97.git],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "eco"
     }
   }
 
