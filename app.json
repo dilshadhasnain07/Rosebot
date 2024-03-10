@@ -91,12 +91,9 @@
       }
     }
   ],
-  "stack": "heroku-22",
-  "buildpacks": [https://github.com/dilshadhasnain07/Rosebot],
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "eco"
+  "plan": "heroku-postgresql",
+         "options": {
+            "version": "12"
     }
   }
 }
