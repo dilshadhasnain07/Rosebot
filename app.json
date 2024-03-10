@@ -92,7 +92,7 @@
     }
   ],
 "stack": "heroku-22",
-  "buildpacks": [https://git.heroku.com/yaemiko97.git],
+  "buildpacks": [heroku/python],
   "formation": {
     "web": {
       "quantity": 1,
