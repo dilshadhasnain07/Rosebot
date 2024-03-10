@@ -91,12 +91,12 @@
       }
     }
   ],
-  "stack": "heroku-20",
+  "stack": "heroku-22",
   "buildpacks": [],
   "formation": {
     "web": {
       "quantity": 1,
-      "size": "free"
+      "size": "eco"
     }
   }
 }
