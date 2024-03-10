@@ -92,7 +92,7 @@
     }
   ],
   "stack": "heroku-22",
-  "buildpacks": [],
+  "buildpacks": [https://github.com/dilshadhasnain07/Rosebot],
   "formation": {
     "web": {
       "quantity": 1,
