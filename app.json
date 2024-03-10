@@ -92,7 +92,7 @@
     }
   ],
 "stack": "heroku-22",
-  "buildpacks": [ https://github.com/heroku/heroku-buildpack-python.git],
+
   "formation": {
     "web": {
       "quantity": 1,
