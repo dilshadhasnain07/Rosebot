@@ -1,5 +1,5 @@
 {
-  "name": "Kochubot",
+  "name": "Rosebot",
   "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
   "logo": "https://telegra.ph/file/1925c7a2f601539ccde7a.png",
   "keywords": [
@@ -42,7 +42,7 @@
     },
     "SUDO_USERS": {
       "description": "A space separated list of user_ids which should be considered sudo users",
-      "value": "6346273488"
+      "value": "254318997 18673980 83489514"
     },
     "SUPPORT_USERS": {
       "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
@@ -91,12 +91,8 @@
       }
     }
   ],
-  "stack": "heroku-22",
-    "buildpacks": [],
-    ]
-  
-    ]
-  
+  "stack": "heroku-20",
+  "buildpacks": [],
   "formation": {
     "web": {
       "quantity": 1,
