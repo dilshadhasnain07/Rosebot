@@ -92,7 +92,7 @@
     }
   ],
 "stack": "heroku-22",
-  "buildpacks": [https://github.com/dilshadhasnain07/Rosebot/heroku-python],
+  "buildpacks": [heroku-20-build],
   "formation": {
     "web": {
       "quantity": 1,
