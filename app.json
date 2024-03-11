@@ -1,7 +1,7 @@
 {
    "name": "Rosebot",
    "description": "A versatile Telegram Group Management Bot.",
-   "logo": "https://telegra.ph/file/4d370b478d90d98709398.jpg",
+   "logo": "https://telegra.ph/file/ac054fe88d656291f02e7.jpg",
    "keywords": ["telegram", "modular", "group", "management", "rosebot"],
    "repository": "https://github.com/dilshadhasnain07/Rosebot",
    "stack": "heroku-22",
