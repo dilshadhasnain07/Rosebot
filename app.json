@@ -1,107 +1,102 @@
 {
-   "name": "Rosebot",
-   "description": "A versatile Telegram Group Management Bot.",
-   "logo": "https://telegra.ph/file/ac054fe88d656291f02e7.jpg",
-   "keywords": ["telegram", "modular", "group", "management", "rosebot"],
-   "repository": "https://github.com/dilshadhasnain07/Rosebot",
-   "stack": "heroku-22",
-   "addons": [
-      {
-         "plan": "heroku-postgresql",
-         "options": {
-            "version": "12"
-         }
+  "name": "Rosebot",
+  "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
+  "logo": "https://telegra.ph/file/1925c7a2f601539ccde7a.png",
+  "keywords": [
+    "telegram",
+    "best",
+    "group",
+    "manager",
+    "3",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/dilshadhasnain07/Rosebot",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable env variables. But, you need to understand the code to know what to set here!",
+      "value": "ANYTHING"
+    },
+    "TOKEN": {
+      "description": "Your bot token, as a string."
+    },
+    "OWNER_ID": {
+      "description": "An integer of consisting of your owner ID",
+      "value": "6346273488"
+    },
+    "OWNER_USERNAME": {
+      "description": "Your username",
+      "value": "hasnainkk"
+    },
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode messages",
+      "value": "ANYTHING"
+    },
+    "URL": {
+      "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/"
+    },
+    "MESSAGE_DUMP": {
+      "description": "optional: a chat where your replied saved messages are stored, to stop people deleting their old",
+      "required": false
+    },
+    "SUDO_USERS": {
+      "description": "A space separated list of user_ids which should be considered sudo users",
+      "value": "6346273488"
+    },
+    "SUPPORT_USERS": {
+      "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
+      "value": "6346273488"
+    },
+    "WHITELIST_USERS": {
+      "description": "A space separated list of user_ids which should be considered whitelisted - they can't be banned.",
+      "value": "6346273488"
+    },
+    "DONATION_LINK": {
+      "description": "Optional: link where you would like to receive donations.",
+      "value": "https://www.paypal.me/PaulSonOfLars"
+    },
+    "PORT": {
+      "description": "Port to use for your webhooks",
+      "value": "8443"
+    },
+    "DEL_CMDS": {
+      "description": "Whether to delete commands from users which don't have rights to use that command",
+      "value": "True"
+    },
+    "STRICT_GBAN": {
+      "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
+      "value": "True"
+    },
+    "ALLOW_EXCL": {
+      "description": "Whether to allow using exclamation marks ! for commands as well as /.",
+      "value": "True"
+    },
+    "BAN_STICKER": {
+      "description": "Which sticker to use when banning people. Use https://telegram.dog/ShowJsonBot to get the file_id",
+      "value": "CAADBQADfQADv7rGI0wxx1ORU7UzAg",
+      "required": false
+    },
+    "BMERNU_SCUT_SRELFTI": {
+      "description": "please set this value as 0",
+      "value": "1",
+      "required": false
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
       }
-   ],
-   "env": {
-      "API_ID": {
-         "description": "Obtain this value from my.telegram.org/apps.",
-         "required": true,
-         "value": ""
-      },
-      "API_HASH": {
-         "description": "Obtain this value from my.telegram.org/apps.",
-         "required": true,
-         "value": ""
-      },
-      "DEL_CMDS": {
-         "description": "Set this to True to delete command messages from users without the necessary permissions.",
-         "value": "True"
-      },
-      "ENV": {
-         "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is.",
-         "required": true,
-         "value": "True"
-      },
-      "EVENT_LOGS": {
-         "description": "Channel for event logs to note down important bot-level events. Recommend making this public. Example: '-123456'",
-         "required": true,
-         "value": "-1002074034670"
-      },
-      "MESSAGE_DUMP": {
-         "description": "Support chat ID.",
-         "required": true,
-         "value": "-1002074034670"
-      },
-      "MONGO_DB_URI": {
-         "description": "Required for MongoDB database connections.",
-         "required": true,
-         "value": "mongodb+srv://"
-         
-      },
-      "OWNER_ID": {
-         "description": "Your user ID as an integer.",
-         "required": true,
-         "value": "6346273488"
-      },
-      "DEV_USERS": {
-         "description": "A space separated list of user IDs who you want to assign as sudo users.",
-         "required": false,
-         "value": "6346273488"
-      },
-      "DRAGONS": {
-         "description": "A space separated list of user IDs who you want to assign as sudo users.",
-         "required": false,
-         "value": "6346273488"
-      },
-      "STRICT_GBAN": {
-         "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
-         "value": "True"
-      },
-      "DEMONS": {
-         "description": "A space separated list of user IDs who can use Gban From Your Bot",
-         "required": false,
-         "value": "6346273488"
-      },
-      "TIGERS": {
-         "description": "A space separated list of user IDs who can not be banned by your Bot",
-         "required": false,
-         "value": "6346273488"
-      },
-      "WOLVES": {
-         "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
-         "required": false,
-         "value": "6346273488"
-      },
-      "SUPPORT_CHAT": {
-         "description": "Your Telegram support group chat username. Users will reach out for assistance. Example: MyGroupChatUsernameBlah. Avoid pointing to Miko Support to prevent conflicts.",
-         "required": true,
-         "value": "ANIME_NETWORK07"
-      },
-      "SUPPORT_ID": {
-         "description": "Support chat ID.",
-         "required": true,
-         "value": "-1002074034670"
-      },
-      "DB_NAME": {
-         "description": "Your MongoDB name.",
-         "required": true,
-         "value": "MongoDB"
-      },
-      "TOKEN": {
-         "description": "Bot token obtained from @BotFather on Telegram.",
-         "required": true,
-         "value": ""
-      }
-   }
+    }
+  ],
+  "stack": "heroku-20",
+  "buildpacks": [],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
 }
