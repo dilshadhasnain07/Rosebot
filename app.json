@@ -92,7 +92,7 @@
     }
   ],
   "stack": "heroku-20",
-  "buildpacks": [python3],
+  "buildpacks": [python3 -m tg_bot],
   "formation": {
     "web": {
       "quantity": 1,
