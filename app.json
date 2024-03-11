@@ -92,7 +92,7 @@
     }
   ],
   "stack": "heroku-20",
-  "buildpacks": [],
+  "buildpacks": [python3],
   "formation": {
     "web": {
       "quantity": 1,
