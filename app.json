@@ -92,6 +92,7 @@
     }
   ],
   "stack": "heroku-20",
+  "buildpacks": "heroku/python"
   "formation": {
     "web": {
       "quantity": 1,
@@ -99,13 +100,5 @@
     }
   }
 }
-"buildpacks": [
-      {
-        "url":"https://github.com/dilshadhasnain07/heroku-buildpack-ffmpeg-latest"
-      },
-      {
-        "url": "heroku/python"
-      }
-    ]
   
   
