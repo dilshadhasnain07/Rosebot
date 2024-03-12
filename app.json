@@ -92,7 +92,15 @@
     }
   ],
   "stack": "heroku-20",
-  "buildpacks": [heroku/python]
+  "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
   "formation": {
     "web": {
       "quantity": 1,
