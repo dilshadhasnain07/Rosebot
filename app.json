@@ -1,7 +1,7 @@
 {
-  "name": "Rosebot",
+  "name": "Kochubot",
   "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
-  "logo": "https://te.legra.ph/file/49c43e6fc856534a09853.jpg",
+  "logo": "https://telegra.ph/file/1925c7a2f601539ccde7a.png",
   "keywords": [
     "telegram",
     "best",
@@ -42,11 +42,11 @@
     },
     "SUDO_USERS": {
       "description": "A space separated list of user_ids which should be considered sudo users",
-      "value": "6346273488"
+      "value": ""
     },
     "SUPPORT_USERS": {
       "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
-      "value": "6346273488"
+      "value": ""
     },
     "WHITELIST_USERS": {
       "description": "A space separated list of user_ids which should be considered whitelisted - they can't be banned.",
@@ -91,19 +91,16 @@
       }
     }
   ],
-  "stack": "heroku-22",
-  {
-"buildpacks": [
-          {
+  "stack": "heroku-20",
+  "buildpacks":  {
               "url": "heroku/python"
           },
-    
+          {
+              "url": "heroku/nodejs"
+          },
           {
               "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
-      ],
-      "stack": "container"
-}
   "formation": {
     "web": {
       "quantity": 1,
@@ -111,5 +108,3 @@
     }
   }
 }
-  
-  
