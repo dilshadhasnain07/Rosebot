@@ -1,7 +1,7 @@
 {
   "name": "Rosebot",
   "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
-  "logo": "https://telegra.ph/file/1925c7a2f601539ccde7a.png",
+  "logo": "https://te.legra.ph/file/49c43e6fc856534a09853.jpg",
   "keywords": [
     "telegram",
     "best",
@@ -93,13 +93,19 @@
   ],
   "stack": "heroku-22",
   {
-  "buildpacks": [
+"buildpacks": [
           {
               "url": "heroku/python"
           },
-    
+          {
+              "url": "heroku/nodejs"
+          },
           {
               "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+}
   "formation": {
     "web": {
       "quantity": 1,
