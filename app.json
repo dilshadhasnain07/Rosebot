@@ -67,8 +67,7 @@
       "required": false,
       "value": ""
   },    
-        
-    "OWNER_ID": {
+   "OWNER_ID": {
        "description": "Your user ID as an integer.",
        "required": true,
        "value": "6346273488"
@@ -85,7 +84,9 @@
     },
      "OWNER_USERNAME": {
          "description": "Your username",
+         "required": true,
          "value":"hasnainkk"
+     },
     "TOKEN": {
        "description": "Get bot token from @BotFather on TG",
        "required": true,
