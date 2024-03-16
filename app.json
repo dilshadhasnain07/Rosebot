@@ -3,7 +3,7 @@
     "description": "A versatile Telegram Group Management Bot",
     "logo": "https://telegra.ph/file/bc9699c365f82b7ca0f32.jpg",
     "keywords": [["telegram", "modular", "group", "management", "Miko"],],
-    "repository": "https://github.com/dilshadhasnain07/Yaemiko-1",
+    "repository": "https://github.com/dilshadhasnain07/Rosebot",
     "stack": "heroku-22",
        "addons": [
       {
