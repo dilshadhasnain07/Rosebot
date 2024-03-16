@@ -82,7 +82,7 @@
       "value": "1",
       "required": false
     }
-  },
+  }
   "addons": [
     {
       "plan": "heroku-postgresql",
@@ -90,16 +90,15 @@
         "version": "12"
       }
     }
-  ],
+  ]
   "stack": "heroku-22",
   "buildpacks": [{
-    
               "url": "heroku/python"
-        
+    
   "formation": {
     "web": {
       "quantity": 1,
-      "size": "free"
+      "size": "eco"
     }
   }
-}
+  }
