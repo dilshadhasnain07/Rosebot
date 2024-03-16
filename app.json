@@ -4,7 +4,7 @@
     "logo": "https://telegra.ph/file/bc9699c365f82b7ca0f32.jpg",
     "keywords": [["telegram", "modular", "group", "management", "Miko"],],
     "repository": "https://github.com/dilshadhasnain07/Rosebot",
-    "stack": "heroku-22",
+    "stack": "container",
        "addons": [
       {
          "plan": "heroku-postgresql",
