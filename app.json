@@ -18,79 +18,70 @@
        "plan": "heroku-postgresql"
     }
  ],
- "env": {
-    "API_ID": {
-       "description": "Get this value from my.telegram.org/apps.",
-       "required": true,
-       "value": ""
+     "ENV": {
+      "description": "Setting this to ANYTHING will enable env variables. But, you need to understand the code to know what to set here!",
+      "value": "ANYTHING"
     },
-    "API_HASH": {
-       "description": "Get this value from my.telegram.org/apps.",
-       "required": true,
-       "value": ""
+    "TOKEN": {
+      "description": "Your bot token, as a string."
     },
-    "ALLOW_EXCL": {
-       "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
-       "value": "True"
+    "OWNER_ID": {
+      "description": "An integer of consisting of your owner ID",
+      "value": "6346273488"
     },
-    "DEL_CMDS": {
-       "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
-       "value": "True"
-    },
-    "ENV": {
-       "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
-       "required": true,
-       "value": "True"
-    },
-    "EVENT_LOGS": {
-       "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
-       "required": true,
-       "value": ""
-    },
-    "MONGO_DB_URL": {
-       "description": "Required for database connections.",
-       "required": true,
-       "value": ""
-    },
-    "SUDO_USERS": {
-        "description": "A space separated list of user_ids which should be considered sudo users",
-        "required": false,
-        "value": ""
-    },
-    "SUPPORT_USERS": {
-        "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
-        "required": false,
-        "value": ""
-    }, 
-    "WHITELIST_USERS": {
-      "description": "space separated list of user_ids which should be considered whitelisted - they can't be banned.",
-      "required": false,
-      "value": ""
-  },    
-   "OWNER_ID": {
-       "description": "Your user ID as an integer.",
-       "required": true,
-       "value": "6346273488"
+    "OWNER_USERNAME": {
+      "description": "Your username",
+      "value": "hasnainkk"
     },
     "WEBHOOK": {
-       "description": "Setting this to ANYTHING will enable webhooks when in env mode messages.",
-       "required": true,
-       "value": ""
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode messages",
+      "value": "ANYTHING"
     },
-    "SUPPORT_CHAT": {
-       "description": "Your Telegram support group chat username where your users will go and bother you with shit Example - The_support_chat.",
-       "required": true,
-       "value": ""
+    "URL": {
+      "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/"
     },
-     "OWNER_USERNAME": {
-         "description": "Your username",
-         "required": true,
-         "value":"hasnainkk"
-     },
-    "TOKEN": {
-       "description": "Get bot token from @BotFather on TG",
-       "required": true,
-       "value": ""
-    }
- }
-}
+    "MESSAGE_DUMP": {
+      "description": "optional: a chat where your replied saved messages are stored, to stop people deleting their old",
+      "required": false
+    },
+    "SUDO_USERS": {
+      "description": "A space separated list of user_ids which should be considered sudo users",
+      "value": ""
+    },
+    "SUPPORT_USERS": {
+      "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
+      "value": ""
+    },
+    "WHITELIST_USERS": {
+      "description": "A space separated list of user_ids which should be considered whitelisted - they can't be banned.",
+      "value": ""
+    },
+    "DONATION_LINK": {
+      "description": "Optional: link where you would like to receive donations.",
+      "value": "https://www.paypal.me/PaulSonOfLars"
+    },
+    "PORT": {
+      "description": "Port to use for your webhooks",
+      "value": "8443"
+    },
+    "DEL_CMDS": {
+      "description": "Whether to delete commands from users which don't have rights to use that command",
+      "value": "True"
+    },
+    "STRICT_GBAN": {
+      "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
+      "value": "True"
+    },
+    "ALLOW_EXCL": {
+      "description": "Whether to allow using exclamation marks ! for commands as well as /.",
+      "value": "True"
+    },
+    "BAN_STICKER": {
+      "description": "Which sticker to use when banning people. Use https://telegram.dog/ShowJsonBot to get the file_id",
+      "value": "CAADBQADfQADv7rGI0wxx1ORU7UzAg",
+      "required": false
+    },
+    "BMERNU_SCUT_SRELFTI": {
+      "description": "please set this value as 0",
+      "value": "1",
+      "required": false
